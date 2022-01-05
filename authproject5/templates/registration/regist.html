@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Wellcome to Registration Page</h1><hr><br>
+    <div class='container'>
+      <h1>SignUp:</h1><hr>
+      <form method='POST'>
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type='submit' value='SignUp'><br><br>
+        <a href='/accounts/login'>Login</a>
+      </form>
+    </div>
+  </body>
+</html>
